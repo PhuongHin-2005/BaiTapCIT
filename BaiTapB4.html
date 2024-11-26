@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu NTPH</title>
+    <style> 
+        body {
+            background-color: pink;
+        }
+        h1{
+            color: white;
+        }
+        .font-size{
+            font-size: 100px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(241, 152, 192);
+            border-radius: 10px;
+            box-shadow: 1 20px 25px rgba(132, 34, 73, 0.1);
+
+        }
+        input[type="submit"]{
+            background-color: palevioletred;
+            color:aliceblue;
+            padding: 10px 55px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            width:100%;
+            padding: 5px;
+        }
+        input[type="email"]{
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="password"]{
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="date"]{
+            width: 100%;
+            padding: 5px;
+        }  
+          </style>
+</head>
+<body>
+    <h1>Biểu mẫu thông tin</h1>
+    <form action="submit_form.html" method="POST" target="_blank">
+        <label for="Họ và Tên">Họ và Tên:</label><br>
+        <input type="text" id="Họ và Tên" name="Họ và Tên"><br>
+        
+        <label for="Email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="Passwword"> Mật Khẩu (tối thiểu 8 ký tự):</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br>
+
+        <label for="Date">Ngày Sinh:</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="Giới tính">Giới Tính:</label><br>
+        <input type="radio" id="Nữ" name="giới tính" value="Nữ">
+        <label for="Nữ">Nữ</label><br>
+        <input type="radio" id="Nam" name="giới tính" value="Nam">
+        <label for="Nam">Nam</label><br>
+
+        <label for="Sở thích">Sở Thích:</label><br>
+        <input type="checkbox" id="Đọc sách" name="Sở thích" value="Đọc sách">
+        <label for="Sở thích">Đọc sách</label>
+        <input type="checkbox" id="Du lịch" name="Sở thích" value="Du lịch">
+        <label for="sở thích">Du lịch</label>
+        <input type="checkbox" id="Nghe nhạc" name="Sở thích" value="Nghe nhạc">
+        <label for="Sở thích">Nghe nhạc</label><br>
+
+        <label for="ảnh">Tải ảnh đại diện:</label><br>
+        <input type="file" id="ảnh đại diện" name="ảnh" accept="image/*"><br>
+
+        <input type="submit" value="Gửi">
+
+
+    </form>
+</body>
+</html>
