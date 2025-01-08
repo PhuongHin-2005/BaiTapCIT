@@ -1,0 +1,33 @@
+h1 {
+    border: 20px solid blueviolet;
+    background-color: blueviolet;
+    color:white; font-size: 50px;
+    text-align: center;
+}
+p:hover  { color: blueviolet;}
+p:active{color: palevioletred;}
+
+body {
+    background-color: rgb(158, 102, 179);
+}
+div p{ 
+    background: rgb(158, 102, 179);
+    
+}
+div h2{
+    background: white;
+    color: blueviolet;
+}
+div .b{
+    background-color: rgb(158, 102, 179);
+}
+div p{
+    background: rgb(168, 122, 211);
+}
+div {background: white;}
+div .a {
+    text-align: center;
+}
+div .c {
+    background: aqua;
+}
