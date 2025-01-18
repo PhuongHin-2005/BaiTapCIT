@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang web Quản Trị Mạng</title>
+    <style>
+        body {
+            background-color: rgb(163, 102, 163);
+            overflow: scroll;
+        }
+        header {
+            background-color: white;
+            color: purple;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: purple;
+            color: blueviolet;
+            padding: 10px;
+        }
+
+        .navigation .left-items {
+            display: flex;
+        }
+
+        .navigation .right-items {
+            order: 5;
+        }
+
+        .navigation span {
+            padding: 5px;
+        }
+        .flex-container {
+            display:flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .from {
+            flex: 3;
+            background-color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .introduction {
+            flex: 1;
+            background-color: white;
+            margin-left: 10px;
+        }
+        div .static {
+            position: static;
+
+            border: 5px solid  black; 
+        }
+        div .Tim {
+            background-color: plum;
+            width: 1150px;
+            height: 500px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        div .Tim2 {
+            background-color: plum;
+            width: 255px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Quản Trị Mạng</h1>
+        <h4>Kiến thức - Kinh nghiệm - Hỏi đáp </h4>
+        <div class="navigation">
+            <div class="left-items">
+                <span>Làng Công nghệ</span>
+                <span>Công nghệ</span>
+                <span>Cuộc sống</span>
+            </div>
+            <div class="right-items">
+                <span>Đăng ký</span>
+            </div>
+        </div>
+    </header>
+    <div class="flex-container">
+        <div class="from">
+            <H2> From - Biểu mẫu trong CSS</H2>
+            <p> Quách Tỉnh, 14/02/2019</p>
+            <div class="Tim">
+                ảnh
+
+            </div>
+        </div>
+        <div  class="introduction">
+            <h2>Giới thiệu</h2>
+            <p> Nội dung giới thiệu</p>
+            <div class="Tim2">
+                Ảnh
+            </div>
+            <p> Quantrimang.com</p>
+        </div>
+    </div>
+</body>
+</html>
