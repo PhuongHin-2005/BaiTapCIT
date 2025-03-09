@@ -1,27 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cửa hàng sách online</title>
-    <link rel="stylesheet" href="style3.css" />
+    <title>Tiệm Bánh Ngọt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+        }
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ff66b2;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ff3385;
+        }
+        .banner {
+            background-color: #ffb3d9;
+            padding: 50px;
+            text-align: center;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .services, .menu, .gallery, .blog {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-item, .menu-item, .gallery-item, .blog-item {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1 1 30%;
+        }
+        .service-item img, .menu-item img, .gallery-item img, .blog-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <div class="header">
-            <hi>Cửa hàng sách online</hi>
-        </div>
-        <div class="content">
-            <p>Chào mừng bạn đến với của hàng sách online. Khám phá những cuốn sách hay và phù hợp với bạn!</p>
-            <div class="book-list">
-                <h2>Danh sách nổi bật</h2>
-                <ul>
-                    <li>Cuốn sách 1: Tác giả A</li>
-                    <li>Cuốn sách 2: Tác giả B</li>
-                    <li>Cuốn sách 3: Tác giả C</li>
-                </ul>
-            </div>
-        </div>
+    <header>
+        <h1>Tiệm Bánh Ngọt</h1>
+    </header>
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="#">Dịch Vụ</a>
+        <a href="#">Thực Đơn</a>
+        <a href="#">Blog</a>
+        <a href="#">Liên Hệ</a>
+    </nav>
+    <div class="banner">
+        <h2>Chào Mừng Đến Với Tiệm Bánh Ngọt</h2>
+        <p>Hương vị ngọt ngào cho cuộc sống của bạn</p>
     </div>
+    <section class="section services">
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
+        <div class="service-item">
+            <img src="images/dich-vu-1.jpg" alt="Dịch Vụ 1">
+            <h3>Trang Trí Sân Khấu</h3>
+            <p>Chúng tôi cung cấp dịch vụ trang trí sân khấu chuyên nghiệp cho các sự kiện của bạn.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/dich-vu-2.jpg" alt="Dịch Vụ 2">
+            <h3>Đỗ Xe</h3>
+            <p>Dịch vụ đỗ xe thuận tiện và an toàn cho khách hàng.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/dich-vu-3.jpg" alt="Dịch Vụ 3">
+            <h3>WiFi Miễn Phí</h3>
+            <p>WiFi tốc độ cao miễn phí cho tất cả khách hàng.</p>
+        </div>
+    </section>
+    <section class="section menu">
+        <h2>Thực Đơn Đặc Biệt</h2>
+        <div class="menu-item">
+            <img src="images/banh-raw-cake.jpg" alt="Raw Cake">
+            <h3>Bánh Raw Cake</h3>
+            <p>Giá: 350,000 VND</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/banh-plant-burger.jpg" alt="Plant Burger">
+            <h3>Bánh Plant Burger</h3>
+            <p>Giá: 420,000 VND</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/banh-mushrooms-pasta.jpg" alt="Mushrooms Pasta">
+            <h3>Mì Nấm</h3>
+            <p>Giá: 250,000 VND</p>
+        </div>
+    </section>
+    <section class="section gallery">
+        <h2>Bộ Sưu Tập</h2>
+        <div class="gallery-item">
+            <img src="images/gallery-1.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery-2.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery-3.jpg" alt="Gallery 3">
+        </div>
+    </section>
+    <section class="section blog">
+        <h2>Blog Mới Nhất</h2>
+        <div class="blog-item">
+            <img src="images/blog-1.jpg" alt="Blog 1">
+            <h3>Royal Yacht Club Cocktail</h3>
+            <p>Ngày 10 tháng 12, 2022</p>
+            <p>Khám phá công thức cocktail độc đáo từ Royal Yacht Club.</p>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog-2.jpg" alt="Blog 2">
+            <h3>Chocolate Muffins Gift</h3>
+            <p>Ngày 10 tháng 12, 2022</p>
+            <p>Những chiếc bánh muffin socola thơm ngon dành tặng người thân.</p>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog-3.jpg" alt="Blog 3">
+            <h3>Borscht Theo Công Thức Đặc Biệt</h3>
+            <p>Ngày 10 tháng 12, 2022</p>
+            <p>Thưởng thức món borscht truyền thống với hương vị đặc biệt.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tiệm Bánh Ngọt - Tất cả các quyền được bảo lưu</p>
+    </footer>
 </body>
 </html>

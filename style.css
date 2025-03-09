@@ -1,18 +1,6 @@
-body {
-    background-color: paleturquoise;
-  }
-  h1 {
-    color: blue;
-  }
-  .omg {
-    color: red;
-  }
-  .font-size{
-    font-size: 50px;
-  }
-  p {
-    color:black;
-  }
-  b {
-    color:blueviolet
-  }
+.nav {
+  margin-top: 0;
+}
+.nav .nav-item {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */

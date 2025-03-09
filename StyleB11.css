@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.site-navbar {
+  background-color: rgb(245, 215, 220);
+  padding: 15px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.site-navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-navbar .site-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d63384;
+  text-decoration: none;
+}
+.site-navbar .site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.site-navbar .site-navigation ul li {
+  margin-left: 20px;
+}
+.site-navbar .site-navigation ul li a {
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 500;
+}
+.site-navbar .site-navigation ul li a:hover {
+  color: #d63384;
+}
+
+.banner {
+  width: 90%;
+  text-align: center;
+  padding: 20px 0;
+}
+.banner img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px #d63384;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.site-logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.site-logo a:hover {
+  color: #d63384;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+}
+.hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.hero .btn-primary {
+  background-color: #d63384;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.hero .btn-primary:hover {
+  background-color: #b2246b;
+}
+
+.products {
+  padding: 60px 0;
+}
+.products .section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.products .product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.products .product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.products .product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.products .product p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+.products .product .btn-dark {
+  background-color: #343a40;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.products .product .btn-dark:hover {
+  background-color: #4b545c;
+}
+
+.about {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.about .about-text {
+  flex: 1;
+  text-align: left;
+}
+.about .about-image {
+  flex: 1;
+  text-align: center;
+}
+.about .about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.about .about-image img:hover {
+  transform: scale(1.05);
+}
+.about .core-values {
+  margin-top: 50px;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.about .core-values h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+.about .core-values ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.about .core-values ul li {
+  background: #fce4ec;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d63384;
+  transition: transform 0.3s ease-in-out;
+}
+.about .core-values ul li:hover {
+  transform: scale(1.1);
+  background: #d63384;
+  color: white;
+}
+
+.faq {
+  padding: 50px 0;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.faq .accordion-button {
+  font-weight: bold;
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+.faq .accordion-button:hover {
+  color: #d63384;
+}
+
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 16px;
+}
+
+.site-footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.site-footer a {
+  color: #d63384;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=StyleB11.css.map */

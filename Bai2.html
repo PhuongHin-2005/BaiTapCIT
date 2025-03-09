@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hãy Đọc Sách Mỗi Ngày</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: whitesmoke;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: black;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        table, th, td {
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: pink;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            background: pink;
+            color: whitesmoke;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+    
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid palevioletred;
+            border-radius: 4px;
+        }
+        button {
+            background-color: palevioletred;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: palevioletred; color: whitesmoke; padding: 20px;">
+        <h1>Hãy Đọc Sách Mỗi Ngày</h1>
+        <p>Đọc sách giúp mở mang kiến thức, rèn luyện tư duy và thư giãn tinh thần.</p>
+    </div>
+    
+    <h2 style="color: palevioletred;">Danh sách sách hay nên đọc</h2>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên Sách</th>
+            <th>Tác Giả</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Đắc Nhân Tâm</td>
+            <td>Dale Carnegie</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nhà Giả Kim</td>
+            <td>Paulo Coelho</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tuổi Trẻ Đáng Giá Bao Nhiêu</td>
+            <td>Rosie Nguyễn</td>
+        </tr>
+    </table>
+
+    <h2 style="color: palevioletred;">Hình ảnh sách</h2>
+    <div class="image-container">
+        <img src="dac_nhan_tam.png" alt="Đắc Nhân Tâm">
+        <img src="nha_gia_kim.png" alt="Nhà Giả Kim">
+        <img src="tuoi_tre.png" alt="Tuổi Trẻ Đáng Giá Bao Nhiêu">
+    </div>
+    
+    <h2 style="color: palevioletred;">Gửi đánh giá của bạn</h2>
+    <form>
+    <div class="from-group"> 
+        <label for="name"><b>Họ và tên:</b></label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="from-group">
+        <label for="message"><b>Đánh giá:</b></label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    </div>  
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
+

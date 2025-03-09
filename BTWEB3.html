@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mộc Sea</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>Mộc Sea</header>
+    <nav>
+        <div class ="nav-left">
+            <a onclick="showContent('home')">Trang chủ</a>
+            <a onclick="showContent('products')">Sản phẩm</a>
+        </div>
+        <div class="nav-right">
+            <a onclick="showContent('login')">Đăng nhập</a>
+        </div>
+    </nav>
+    
+    <div id="home" class="content active">
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Chào mừng đến với Mộc Sea</h2>
+                <p>Mộc Sea - thương hiệu thời trang trẻ trung, hiện đại, luôn đón đầu xu hướng. Chúng tôi mang đến những thiết kế tinh tế, phong cách và được giới trẻ yêu thích, giúp bạn tự tin thể hiện cá tính mỗi ngày. 
+                    Với sự kết hợp hoàn hảo giữa chất liệu cao cấp và kiểu dáng hiện đại, chúng tôi cam kết mang đến những sản phẩm chất lượng, bền đẹp.</p>
+            </div>
+            <div class="about-img">
+                <img src="anhnen.png" alt="Cửa hàng thời trang">
+            </div>
+            
+        </div>
+        <div class="highlight">Mộc Sea không chỉ là thời trang, mà còn là sự khẳng định phong cách và cá tính riêng của bạn. Hãy cùng khám phá bộ sưu tập mới nhất của chúng tôi ngay hôm nay!</div>
+    </div>
+    
+    <div id="products" class="content">
+        <h2 style="text-align:center">Sản phẩm Bán Chạy</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRBPk1i5eE-Cllang3mDTd5iqzzd5sx24zg&s" alt="Sản phẩm 1">
+                <h3>Áo dài trendy - xanh mát trẻ trung</h3>
+                <p>Giá: 250.000đ</p>
+                <button class="cart-button">Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Sản phẩm 2">
+                <h3>Áo dài trendy - gấm trắng</h3>
+                <p>Giá: 320.000đ</p>
+                <button class="cart-button">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="login" class="content">
+        <div class="login-form">
+            <h2>Đăng nhập</h2>
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="password" placeholder="Mật khẩu">
+            <button>Đăng nhập</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mộc Moon. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function showContent(section) {
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>

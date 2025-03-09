@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Chấm Công Nhân Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        .name {
+            text-align: left;
+            font-weight: bold;
+        }
+        .CM {
+            background-color: #d4edda;
+            color: #155724;
+            text-align: center;
+        }
+        .DT {
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+        }
+        .V {
+            background-color: #fff3cd;
+            color: #856404;
+            text-align: center;
+        }
+        .department {
+            background-color: #e2e3e5;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Bảng Chấm Công Nhân Viên - Tháng 02/2025</h2>
+
+    <table>
+        <tr>
+            <th rowspan="2" style="width: 10%;">Mã NV</th>
+            <th rowspan="2" style="width: 25%;">Họ và Tên</th>
+            <th rowspan="2" style="width: 15%;">Phòng Ban</th>
+            <th colspan="4">Ngày làm việc</th>
+        </tr>
+        <tr>
+            <th style="width: 10%;">12/02</th>
+            <th style="width: 10%;">13/02</th>
+            <th style="width: 10%;">14/02</th>
+            <th style="width: 10%;">15/02</th>
+        </tr>
+        <tr>
+            <td rowspan="2">NV001</td>
+            <td rowspan="2" class="name">Nguyễn Văn A</td>
+            <td rowspan="2" class="department">Kế Toán</td>
+            <td class="CM">Có mặt</td>
+            <td class="DT">Đi trễ</td>
+            <td class="CM">Có mặt</td>
+            <td class="V">Vắng</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: whitesmoke; text-align: center; font-weight: bold;">Nghỉ phép</td>
+        </tr>
+        <tr>
+            <td>NV002</td>
+            <td class="name">Trần Thị B</td>
+            <td class="department">Nhân Sự</td>
+            <td class="CM">Có mặt</td>
+            <td class="CM">Có mặt</td>
+            <td class="CM">Có mặt</td>
+            <td class="CM">Có mặt</td>
+        </tr>
+        <tr>
+            <td rowspan="2">NV003</td>
+            <td rowspan="2" class="name">Lê Văn C</td>
+            <td rowspan="2" class="department">IT</td>
+            <td class="V">Vắng</td>
+            <td class="CM">Có mặt</td>
+            <td class="CM">Có mặt</td>
+            <td class="DT">Đi trễ</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: whitesmoke; text-align: center; font-weight: bold;">Công tác</td>
+        </tr>
+    </table>
+
+    <DIV>
+        <form>
+            <label for="name">Tên:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Gửi">
+          </form>
+    </DIV>
+
+</body>
+</html>
