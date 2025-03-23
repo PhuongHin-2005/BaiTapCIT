@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   color: #343a40;
 }
 
 .site-navbar {
-  background-color: rgb(245, 215, 220);
+  background-color: #F8C8DC;
   padding: 15px 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -23,9 +23,9 @@ body {
 }
 .site-navbar .site-navigation ul {
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 .site-navbar .site-navigation ul li {
   margin-left: 20px;
@@ -53,37 +53,16 @@ body {
   box-shadow: 0px 4px 10px #d63384;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  height: 50px;
-  width: auto;
-}
-
-.site-logo a {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.site-logo a:hover {
-  color: #d63384;
-}
-
 .hero {
-  background-size: cover;
-  background-position: center;
+  background-color: #F8C8DC;
   padding: 120px 0;
   text-align: center;
-  color: white;
+  color: #343a40;
 }
 .hero h2 {
   font-size: 36px;
   font-weight: bold;
+  color: #d63384;
 }
 .hero p {
   font-size: 18px;
@@ -94,6 +73,7 @@ body {
   border: none;
   padding: 12px 24px;
   font-size: 16px;
+  color: white;
 }
 .hero .btn-primary:hover {
   background-color: #b2246b;
@@ -101,12 +81,14 @@ body {
 
 .products {
   padding: 60px 0;
+  background-color: #f8f9fa;
 }
 .products .section-title {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 40px;
+  color: #d63384;
 }
 .products .product {
   background-color: white;
@@ -123,6 +105,7 @@ body {
 .products .product h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  color: #d63384;
 }
 .products .product p {
   font-size: 18px;
@@ -131,18 +114,19 @@ body {
   margin-bottom: 15px;
 }
 .products .product .btn-dark {
-  background-color: #343a40;
+  background-color: #d63384;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  color: white;
 }
 .products .product .btn-dark:hover {
-  background-color: #4b545c;
+  background-color: #b2246b;
 }
 
 .about {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 .about h2 {
   font-size: 36px;
@@ -191,14 +175,14 @@ body {
 }
 .about .core-values ul {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 0;
 }
 .about .core-values ul li {
-  background: #fce4ec;
+  background: #f0b2d1;
   padding: 15px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -210,37 +194,6 @@ body {
   transform: scale(1.1);
   background: #d63384;
   color: white;
-}
-
-.faq {
-  padding: 50px 0;
-}
-.faq h2 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.faq .accordion-button {
-  font-weight: bold;
-  color: #343a40;
-  background-color: #f8f9fa;
-}
-.faq .accordion-button:hover {
-  color: #d63384;
-}
-
-.contact {
-  padding: 50px 0;
-  text-align: center;
-}
-.contact h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.contact p {
-  font-size: 16px;
 }
 
 .site-footer {
